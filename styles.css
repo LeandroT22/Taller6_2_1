@@ -1,14 +1,20 @@
 body {
     background-color: rgb(255, 255, 165);
+    margin: 5%;
+    margin-top: 8%;
+    margin-bottom: 8%;
 }
 
-.image{
+.imagen {
     border: 5px solid green;
     border-radius: 10px;
     height: 400px;
+    width: 100%;
+    max-width: 600px;
+    object-fit: cover;
 }
 
-.link-button {
+.boton-enlace {
     text-decoration: none;
     color: black;
     border: 1px solid gray;
@@ -16,4 +22,37 @@ body {
     padding: 5px;
     border-radius: 5px;
     box-shadow: 2px 3px #888888;
+}
+
+/* Estilos para el carrusel */
+.contenedor-carrusel {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+}
+
+.diapositiva-carrusel {
+    display: none;
+}
+
+.diapositiva-carrusel.activa {
+    display: block;
+}
+
+.controles-carrusel {
+    margin-top: 10px;
+}
+
+.controles-carrusel button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.controles-carrusel button:hover {
+    background-color: #555;
 }
