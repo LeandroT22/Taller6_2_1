@@ -14,3 +14,8 @@ function diapositivaSiguiente() {
 function diapositivaAnterior() {
     mostrarDiapositiva(diapositivaActual - 1);
 }
+
+// Iniciar con la primera diapositiva visible
+document.addEventListener('DOMContentLoaded', () => {
+    mostrarDiapositiva(diapositivaActual);
+});
