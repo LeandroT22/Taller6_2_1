@@ -1,5 +1,8 @@
 body {
     background-color: rgb(255, 255, 165);
+    margin: 5%;
+    margin-top: 8%;
+    margin-bottom: 8%;
 }
 
 .image{
@@ -8,15 +11,7 @@ body {
     height: 400px;
 }
 
-.link-button {
-    text-decoration: none;
-    color: black;
-    border: 1px solid gray;
-    background-color: #f2f2f2;
-    padding: 5px;
-    border-radius: 5px;
-    box-shadow: 2px 3px #888888;
-}
+
 
 h1 {
         font-family: "Poppins", sans-serif;
