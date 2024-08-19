@@ -1,59 +1,56 @@
 body {
     background-color: rgb(255, 255, 165);
-    margin: 5%;
-    margin-top: 8%;
-    margin-bottom: 8%;
 }
 
 .imagen {
     border: 5px solid green;
     border-radius: 10px;
     height: 400px;
-    width: 100%;
-    max-width: 600px;
-    object-fit: cover;
 }
 
-.boton-enlace {
-    text-decoration: none;
-    color: black;
-    border: 1px solid gray;
-    background-color: #f2f2f2;
-    padding: 5px;
-    border-radius: 5px;
-    box-shadow: 2px 3px #888888;
-}
-
-/* Estilos para el carrusel */
-.contenedor-carrusel {
-    width: 100%;
-    max-width: 600px;
-    margin: auto;
+.carrusel {
     text-align: center;
-    position: relative;
-}
-
-.diapositiva-carrusel {
-    display: none;
-}
-
-.diapositiva-carrusel.activa {
-    display: block;
+    margin-bottom: 10px;
 }
 
 .controles-carrusel {
-    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .controles-carrusel button {
-    background-color: #333;
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
     border-radius: 5px;
+    border: none;
+    background-color: #85c1e9;
+    color: white;
+    cursor: pointer;
 }
 
 .controles-carrusel button:hover {
-    background-color: #555;
+    background-color: #3498db;
+}
+
+h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    color:#85c1e9;
+    text-align: center;
+}
+
+h2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color:#85c1e9;
+    text-align: center;
+}
+
+p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }

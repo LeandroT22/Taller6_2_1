@@ -1,21 +1,20 @@
-let diapositivaActual = 0;
-const diapositivas = document.querySelectorAll('.diapositiva-carrusel');
+const imagenes = ["img1.jpg", "img2.jpg"];
+let indiceActual = 0;
 
-function mostrarDiapositiva(indice) {
-    diapositivas[diapositivaActual].classList.remove('activa');
-    diapositivaActual = (indice + diapositivas.length) % diapositivas.length;
-    diapositivas[diapositivaActual].classList.add('activa');
+const imagenCarrusel = document.getElementById("imagen-carrusel");
+const botonAnterior = document.getElementById("boton-anterior");
+const botonSiguiente = document.getElementById("boton-siguiente");
+
+function mostrarImagen(indice) {
+    imagenCarrusel.src = imagenes[indice];
 }
 
-function diapositivaSiguiente() {
-    mostrarDiapositiva(diapositivaActual + 1);
-}
+botonAnterior.addEventListener("click", () => {
+    indiceActual = (indiceActual === 0) ? imagenes.length - 1 : indiceActual - 1;
+    mostrarImagen(indiceActual);
+});
 
-function diapositivaAnterior() {
-    mostrarDiapositiva(diapositivaActual - 1);
-}
-
-// Iniciar con la primera diapositiva visible
-document.addEventListener('DOMContentLoaded', () => {
-    mostrarDiapositiva(diapositivaActual);
+botonSiguiente.addEventListener("click", () => {
+    indiceActual = (indiceActual === imagenes.length - 1) ? 0 : indiceActual + 1;
+    mostrarImagen(indiceActual);
 });
