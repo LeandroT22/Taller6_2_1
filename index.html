@@ -10,16 +10,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet">
+    <script src="carrusel.js" defer></script>
 </head>
 
 <body>
     <h1>Galería de la Tecnología</h1>
-    <img src="img1.jpg" alt="Imagen de la NASA" class="image"/>
-    <img src="img2.jpg" alt="Sala de servidores" class="image"/>
+    <div class="carrusel">
+        <!-- Aquí se mostrará la imagen del carrusel -->
+        <img src="img1.jpg" alt="Imagen de la NASA" class="imagen" id="imagen-carrusel"/>
+    </div>
+    <div class="controles-carrusel">
+        <button id="boton-anterior">Anterior</button>
+        <button id="boton-siguiente">Siguiente</button>
+    </div>
     <h2>Lorem descripción</h2>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur minus quia fugiat quae cumque consequatur suscipit quidem? Cupiditate, quos debitis recusandae sequi, fugit quis nihil omnis atque inventore consequatur
-        soluta?</p>
-    <a href="page2.html" title="Imagen siguiente" class="link-button">Siguiente imagen =&gt;</a>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur minus quia fugiat quae cumque consequatur suscipit quidem? Cupiditate, quos debitis recusandae sequi, fugit quis nihil omnis atque inventore consequatur soluta?</p>
 </body>
 
 </html>
